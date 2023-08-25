@@ -7,7 +7,6 @@ public class PlayerController : MonoBehaviour
     private Rigidbody2D fisica;
     private Vector2 direcao;
     [SerializeField]private float velocidade = 100f;
-    public Animator animacao;
 
 
     private void Start(){
@@ -16,12 +15,6 @@ public class PlayerController : MonoBehaviour
     private void Update(){
         this.direcao.x = Input.GetAxisRaw("Horizontal");
         this.direcao.y = Input.GetAxisRaw("Vertical");
-
-        // Controle da animação
-        Vector3 mov = new Vector3(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical"), 0f);
-        animacao.SetFloat("Horizontal", mov.x);
-        animacao.SetFloat("Vertical", mov.y);
-        animacao.SetFloat("Speed", mov.magnitude);
     }
     private void FixedUpdate()
     {
