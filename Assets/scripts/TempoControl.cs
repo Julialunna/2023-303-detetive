@@ -5,15 +5,13 @@ using UnityEngine.SceneManagement;
 
 public class TempoControl : MonoBehaviour
 {
-    [SerializeField] private string menu;
+        [SerializeField] private string menu;
     // Start is called before the first frame update
     void Start()
     {
         
     }
      public void abreMenu(){
-        Debug.Log("tempoDeJogo"+(Time.realtimeSinceStartup-PlayerPrefs.GetFloat("tempoDeMenu")));
-        Debug.Log("tempoDeMenu"+PlayerPrefs.GetFloat("tempoDeMenu"));
         SceneManager.LoadScene(menu); 
     }
 

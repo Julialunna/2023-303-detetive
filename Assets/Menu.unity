@@ -4339,10 +4339,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   nomeLevelDoJogo: jogo
+  menu: Menu
   painelMenuInicial: {fileID: 21171843}
   painelOpcoes: {fileID: 1402859718}
   filtros: {fileID: 587354445}
-  niveis: {fileID: 1779858908}
+  niveis: {fileID: 0}
   legenda: {fileID: 853707343}
 --- !u!4 &1348450494
 Transform:
@@ -5166,9 +5167,9 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1348450493}
+      - m_Target: {fileID: 1348450492}
         m_TargetAssemblyTypeName: MenuPrincipalManager, Assembly-CSharp
-        m_MethodName: guardaNivel
+        m_MethodName: 
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
